@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styleC.css">
+    <link rel="icon" href="logo32.jpg" type="image/x-icon"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Romanesco&display=swap');
+    </style>
+</head>
+<body>
+    
+    <section class="contact">
+        <a href="website3.html" class="back">&laquo;Back</a>
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Connect with us by sending a Message!</p>
+        </div>
+        <div class="container">
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>15, First Avenue Edenvale, 1609</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>Tel: (011) 454 3735</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>gareth@buildingcode.co.za</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm" id="contact-Form">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="a309098f-768e-43ad-9a7c-933b24d788f5">
+                    <h2>Send Message</h2>
+                    <div class="inputbox">
+                        <input type="text" name="FullName" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="Email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea required="required" name="Message"></textarea>
+                        <span>Type Your Message...</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="map">
+            <h2>Find Us!</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.3965087340184!2d28.1491227107153!3d-26.151213161721984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9512490b3bee75%3A0xd910f5422e2c7aa9!2s15%201st%20Ave%2C%20Edenvale%2C%201609!5e0!3m2!1sen!2sza!4v1726651004951!5m2!1sen!2sza" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+    </section>
+    <script>
+        // Contact form submission event listener
+        document.getElementById('contact-Form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Message sent! We will get back to you soon.');
+        });
+    </script>
+</body>
+</html>

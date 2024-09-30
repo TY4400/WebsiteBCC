@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="logo32.jpg" type="image/x-icon" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Romanesco&display=swap');
+    </style>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            background-color: whitesmoke;
+        }
+
+        h2 {
+            margin-left: 40%;
+            margin-top: 10%;
+            position: absolute;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 100px;
+
+        }
+
+        .card {
+            width: 325px;
+            overflow: hidden;
+            margin: 10px;
+        }
+
+        .card img {
+            padding-top: 50%;
+            width: 100%;
+            height: 90%;
+        }
+
+        .back {
+            font-size: 20px;
+            color: rgb(13, 13, 13);
+            padding-right: 80%;
+        }
+        .back a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+        }
+        .back a:hover {
+            background-color: rgba(197, 41, 41, 0.801);
+            color: rgb(0, 0, 0);
+        }
+        @media(max-width: 640px){
+            h2 {
+            margin-top: 40%;
+            margin-left: 10%;
+        }
+        .card-container {
+            margin-top: 5%;
+        }
+
+        }
+        @media(max-width: 1024px){
+            h2 {
+                margin-top: 25%;
+                margin-left: 23%;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <a href="BCC.html" class="back">&laquo;Back</a>
+    <h2>Airports</h2>
+    <div class="card-container">
+        <div class="card">
+            <img src="ATNS JHB Airport.jpeg">
+            <div class="card-content">
+                <p>ATNS JHB Airport</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

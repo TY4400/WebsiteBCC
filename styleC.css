@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.back {
+    font-size: 20px;
+    color: rgb(13, 13, 13);
+    padding-right: 80%;
+}
+.back a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+.back a:hover {
+    background-color: rgba(197, 41, 41, 0.801);
+    color: rgb(0, 0, 0);
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(45deg, #03030369 0%, #000000 30%, #626262 30%, #5a5a5a);
+    background-size: cover;
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: tomato;
+}
+
+.contact .content p {
+    font-weight: 300;
+    color: tomato;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.container .contactinfo,
+.contactForm {
+    flex: 1;
+    min-width: 280px;
+    max-width: 600px;
+    margin: 10px;
+}
+
+.container .contactinfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactinfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactinfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: whitesmoke;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactinfo .box .text h3 {
+    font-weight: 500;
+    color: tomato;
+}
+
+.contactForm {
+    padding: 30px;
+    line-height: 4rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.contactForm .inputbox input,
+.contactForm .inputbox textarea {
+    width: 100%;
+    font-size: 16px;
+    margin: 30px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+.contactForm .inputbox span {
+    position: absolute;
+    left: 55%;
+    padding: 5px 0;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+    color: black;
+}
+
+.contactForm .inputbox input:focus ~ span,
+.contactForm .inputbox input:valid ~ span,
+.contactForm .inputbox textarea:focus ~ span,
+.contactForm .inputbox textarea:focus ~ span {
+    color: black;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputbox input[type="submit"] {
+    width: 100px;
+    background: tomato;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.map {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.map h2 {
+    color: tomato;
+    font-size: 30px;
+    text-align: center;
+}
+
+.map iframe {
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .contact {
+        padding: 20px;
+    }
+    
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact .content h2 {
+        font-size: 28px;
+    }
+
+    .contactForm {
+        padding: 30px;
+    }
+
+    .contactForm h2 {
+        font-size: 24px;
+    }
+
+    .contactForm .inputBox {
+        margin-top: 20px;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactinfo,
+    .contactForm {
+        width: 100%;
+        max-height: 50%;
+        margin: 10px 0;
+    }
+
+    .contactForm .inputbox span {
+        left: 50px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .back {
+        padding-right: 50%;
+        font-size: 18px;
+    }
+
+    .contactForm {
+        padding: 20px;
+    }
+
+    .contactForm .inputBox {
+        margin-top: 10px;
+    }
+
+    .map iframe {
+        height: 300px;
+    }
+    .contactForm h2 {
+        font-size: 24px;
+        margin-left: 80px;
+    }
+
+    .contactForm .inputbox span {
+        font-size: 12px;
+    }
+
+    .contact .content h2 {
+        font-size: 28px;
+    }
+}

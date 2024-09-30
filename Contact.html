@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or need further information, feel free to reach out.</p>
+        
+        <div class="contact-info">
+            <div class="info-item">
+                <h3>Address:</h3>
+                <p>123 Main Street, New York, NY 10001</p>
+            </div>
+            <div class="info-item">
+                <h3>Email:</h3>
+                <p>info@example.com</p>
+            </div>
+            <div class="info-item">
+                <h3>Phone:</h3>
+                <p>(123) 456-7890</p>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="form-container">
+            <h2>Send Us a Message</h2>
+            <form id="contactForm" action="submit_form.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Google Map -->
+        <h1>Find Us</h1>
+        <iframe src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.3965087340184!2d28.1491227107153!3d-26.151213161721984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9512490b3bee75%3A0xd910f5422e2c7aa9!2s15%201st%20Ave%2C%20Edenvale%2C%201609!5e0!3m2!1sen!2sza!4v1726650665195!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="logo32.jpg" type="image/x-icon" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Romanesco&display=swap');
+    </style>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            background-color: whitesmoke;
+        }
+
+        h2 {
+            margin-left: 40%;
+            margin-top: 10%;
+            position: absolute;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 150px;
+
+        }
+
+        .card {
+            width: 325px;
+            overflow: hidden;
+            margin: 10px;
+        }
+
+        .card img {
+            padding-top: 30%;
+            width: 100%;
+            height: 400px;
+        }
+
+        .back {
+            font-size: 20px;
+            color: rgb(13, 13, 13);
+            padding-right: 80%;
+        }
+        .back a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+        }
+        .back a:hover {
+            background-color: rgba(197, 41, 41, 0.801);
+            color: rgb(0, 0, 0);
+        }
+        @media(max-width: 640px){
+            h2 {
+                margin-top: 20%;
+                margin-left: 10%;
+            }
+            .card-container{
+                margin-top: 5%;
+            }
+        }
+        @media(max-width: 1024px){
+            h2 {
+                margin-top: 15%;
+                margin-left: 25%;
+            }
+        }
+        @media(max-width: 1138px){
+            h2 {
+                margin-top: 25%;
+                margin-left: 40px;
+            }
+        }
+        @media(max-width: 1280px){
+            h2 {
+                margin-top: 25%;
+                margin-left: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="BCC.html" class="back">&laquo;Back</a>
+    <h2>Offices</h2>
+    <div class="card-container">
+        <div class="card">
+            <img src="Econank Accra Ghana.jpeg">
+            <div class="card-content">
+                <p>Econank Accra Ghana</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image5.jpeg">
+            <div class="card-content">
+                <p>Department of Landreform in Pretoria</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image8.jpeg">
+            <div class="card-content">
+                <p>335 Place</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Rosebank Corner.jpeg">
+            <div class="card-content">
+                <p>Rosebank Corner</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="WhatsApp Image 2024-08-23 at 11.57.57.jpeg">
+            <div class="card-content">
+                <p>InvestTech Bank</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Johannesburg city Hall.jpeg">
+            <div class="card-content">
+                <p>Johannesburg city Hall</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
